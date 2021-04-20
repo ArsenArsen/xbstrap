@@ -151,7 +151,7 @@ def do_compute_graph(args):
 				out_job['products']['pkgs'].append({
 					'name': pkg.name,
 					'version': pkg.version,
-					'architecture': subject.architecture
+					'architecture': pkg.architecture
 				})
 			for task in job.tasks:
 				for af in task.artifact_files:
